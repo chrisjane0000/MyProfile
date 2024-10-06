@@ -1,20 +1,20 @@
 import React from 'react';
 import { Image, View } from 'react-native';
 
-const Avatar = () => {
+const Avatar = ({ isDarkMode }) => {
     return (
         <View
             style={{
-                backgroundColor: 'gray',
+                backgroundColor: 'gary',
                 width: 150,
                 padding: 20,
-                boxShadow: '#000',
-                border: '5px solid #000',
                 margin: 20,
                 height: 150,
                 borderRadius: 75,
-                left:120,
-                top: '10%'
+                shadowColor: isDarkMode ? '#fff' : '#000',
+                shadowOpacity: 0.5,
+                shadowRadius: 5,
+                elevation: 5,
             }}
         >
             <Image
@@ -27,6 +27,6 @@ const Avatar = () => {
             />
         </View>
     );
-}
+};
 
 export default Avatar;
