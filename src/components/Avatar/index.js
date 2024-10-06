@@ -11,7 +11,7 @@ const Avatar = ({ isDarkMode }) => {
                 margin: 20,
                 height: 150,
                 borderRadius: 75,
-                shadowColor: isDarkMode ? '#fff' : '#000',
+                shadowColor: isDarkMode ? 'black' : 'white',
                 shadowOpacity: 0.5,
                 shadowRadius: 5,
                 elevation: 5,
